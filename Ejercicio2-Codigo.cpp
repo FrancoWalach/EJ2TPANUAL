@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -23,7 +21,7 @@ std::ofstream out;
 
 void EscribirActaDeMesa(std::string unaMesa){
     std::string GetNombreDeArchivoDeMesa(std::string);
-    void EscribirTitulodeActa(std::string);
+    void EscribirTituloDeActa(std::string);
     void EscrbirSenadores();
     void EscribirSeparador();
     void EscribirDiputados();
@@ -35,7 +33,7 @@ void EscribirActaDeMesa(std::string unaMesa){
     EscribirSeparador();
     EscribirDiputados();
     
-    out.close
+    out.close();
 }
 
 std::string GetNombreDeArchivoDeMesa(std::string unaMesa){
@@ -45,4 +43,3 @@ std::string GetNombreDeArchivoDeMesa(std::string unaMesa){
 void EscribirTituloDeActa(std::string unaMesa){
     out << "Acta de la Mesa " + unaMesa;
 }
-
